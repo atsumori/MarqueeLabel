@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD6DD0428E1840A009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DD0328E18405009E946E /* libswiftCoreGraphics.tbd */; };
+		5DD6DD0628E18418009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DD0528E18412009E946E /* libswiftCoreGraphics.tbd */; };
 		EAE4AC071CA8B5A6006C1ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4AC051CA8B5A6006C1ECC /* AppDelegate.m */; };
 		EAE4AC081CA8B5A6006C1ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE4AC061CA8B5A6006C1ECC /* Assets.xcassets */; };
 		EAE4AC0A1CA8B5D0006C1ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4AC091CA8B5D0006C1ECC /* main.m */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DD6DD0328E18405009E946E /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = usr/lib/swift/libswiftCoreGraphics.tbd; sourceTree = SDKROOT; };
+		5DD6DD0528E18412009E946E /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib/swift/libswiftCoreGraphics.tbd; sourceTree = DEVELOPER_DIR; };
 		EA167CDF1CA8B40C00DBF930 /* MarqueeLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarqueeLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE4AC041CA8B5A6006C1ECC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		EAE4AC051CA8B5A6006C1ECC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DD0428E1840A009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,18 +66,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DD0628E18418009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DD6DD0228E18404009E946E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6DD0528E18412009E946E /* libswiftCoreGraphics.tbd */,
+				5DD6DD0328E18405009E946E /* libswiftCoreGraphics.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA167CD61CA8B40C00DBF930 = {
 			isa = PBXGroup;
 			children = (
 				EA167CE11CA8B40C00DBF930 /* MarqueeLabel Demo */,
 				EAE4AC721CA8DCBB006C1ECC /* MarqueeLabel Framework */,
 				EA167CE01CA8B40C00DBF930 /* Products */,
+				5DD6DD0228E18404009E946E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -409,6 +426,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,6 +443,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
