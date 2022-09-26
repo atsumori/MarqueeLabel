@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD6DD0028E17FA3009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DCFF28E17F9E009E946E /* libswiftCoreGraphics.tbd */; };
+		5DD6DD0128E17FB7009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DCFF28E17F9E009E946E /* libswiftCoreGraphics.tbd */; };
 		EA59ABFD1CAA274A0052AD98 /* MarqueeLabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA59ABFC1CAA274A0052AD98 /* MarqueeLabel.storyboard */; };
 		EA59ABFF1CAA278D0052AD98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59ABFE1CAA278D0052AD98 /* ViewController.swift */; };
 		EA59AC011CAA28410052AD98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59AC001CAA28410052AD98 /* AppDelegate.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DD6DCFF28E17F9E009E946E /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = usr/lib/swift/libswiftCoreGraphics.tbd; sourceTree = SDKROOT; };
 		EA59ABFC1CAA274A0052AD98 /* MarqueeLabel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MarqueeLabel.storyboard; sourceTree = SOURCE_ROOT; };
 		EA59ABFE1CAA278D0052AD98 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		EA59AC001CAA28410052AD98 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DD0128E17FB7009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,12 +43,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DD0028E17FA3009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DD6DCFE28E17F9D009E946E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6DCFF28E17F9E009E946E /* libswiftCoreGraphics.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA59AC081CAA28D80052AD98 /* MarqueeLabelTV Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 				EAE4ACB81CAA23FD006C1ECC /* MarqueeLabelTV Demo */,
 				EA59AC081CAA28D80052AD98 /* MarqueeLabelTV Framework */,
 				EAE4ACB71CAA23FD006C1ECC /* Products */,
+				5DD6DCFE28E17F9D009E946E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +278,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -294,6 +312,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +449,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -442,6 +468,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";

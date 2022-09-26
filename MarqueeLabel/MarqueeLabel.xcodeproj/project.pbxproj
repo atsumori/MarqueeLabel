@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD6DCFB28E17F83009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DCFA28E17F77009E946E /* libswiftCoreGraphics.tbd */; };
+		5DD6DCFD28E17F94009E946E /* libswiftCoreGraphics.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD6DCFC28E17F8D009E946E /* libswiftCoreGraphics.tbd */; };
 		EA017CE81DBED75E00237CA9 /* SingleShotOffscreenLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA017CE71DBED75E00237CA9 /* SingleShotOffscreenLabel.swift */; };
 		EA017CEA1DBEDCD900237CA9 /* NoReturnAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA017CE91DBEDCD900237CA9 /* NoReturnAnimation.swift */; };
 		EAE4AC591CA8DAC0006C1ECC /* MLHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE4AC581CA8DAC0006C1ECC /* MLHeader.xib */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DD6DCFA28E17F77009E946E /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = usr/lib/swift/libswiftCoreGraphics.tbd; sourceTree = SDKROOT; };
+		5DD6DCFC28E17F8D009E946E /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib/swift/libswiftCoreGraphics.tbd; sourceTree = DEVELOPER_DIR; };
 		EA017CE71DBED75E00237CA9 /* SingleShotOffscreenLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleShotOffscreenLabel.swift; path = ../../Extras/SingleShotOffscreenLabel.swift; sourceTree = "<group>"; };
 		EA017CE91DBEDCD900237CA9 /* NoReturnAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoReturnAnimation.swift; path = ../../Extras/NoReturnAnimation.swift; sourceTree = "<group>"; };
 		EA167D021CA8B43700DBF930 /* MarqueeLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarqueeLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DCFB28E17F83009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,12 +56,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD6DCFD28E17F94009E946E /* libswiftCoreGraphics.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DD6DCF928E17F77009E946E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6DCFC28E17F8D009E946E /* libswiftCoreGraphics.tbd */,
+				5DD6DCFA28E17F77009E946E /* libswiftCoreGraphics.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA017CE61DBED65E00237CA9 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +89,7 @@
 				EAE4AC801CA8DE70006C1ECC /* MarqueeLabel Framework */,
 				EA167D031CA8B43700DBF930 /* Products */,
 				EA017CE61DBED65E00237CA9 /* Extras */,
+				5DD6DCF928E17F77009E946E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,6 +426,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -425,6 +445,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.charlespowell.MarqueeLabelSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
